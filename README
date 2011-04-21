@@ -1,0 +1,14 @@
+A simple jQuery plugin which generates a noise effect on the background of DOM elements using HTML5 canvas element.
+
+Inspired from Jeffrey Way's tutorial:
+http://net.tutsplus.com/tutorials/javascript-ajax/how-to-generate-noise-with-canvas/
+
+AVAILABLE OPTIONS:
+opacity : Opacity value of noise image. Between 0.02 - 0.20 is enough. (Default: .08)
+size: Canvas size in pixels. Higher values degrades performance. Between 40-80 is enough. (Default:40)
+color: Fallback background fill color if browser doesn't support canvas. (Default: '#ebebeb')
+
+USAGE:
+$('body').bgnoise();
+$('body').bgnoise({ opacity:0.1, size:50})
+$('body').bgnoise({ opacity:0.1, size:50, color:'orange'})
